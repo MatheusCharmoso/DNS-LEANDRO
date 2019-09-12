@@ -48,7 +48,7 @@ public class DNS implements InterfaceDNS {
 	public boolean autentica(String nick, String ip) throws RemoteException {
 		tabelaUsuarios.adicionarUsuario(nick, ip);
 		System.out.println("Tabela de usuarios online: " +tabelaUsuarios.toString());
-		tabelaUsuarios.CreateUserList();
+		tabelaUsuarios.criaListaNick();
 		return true;
 	}
 
